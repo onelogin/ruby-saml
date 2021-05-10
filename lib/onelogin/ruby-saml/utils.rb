@@ -15,7 +15,7 @@ module OneLogin
 
       DSIG      = "http://www.w3.org/2000/09/xmldsig#"
       XENC      = "http://www.w3.org/2001/04/xmlenc#"
-      DURATION_FORMAT = %r(^(-?)P(?:(?:(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?)|(?:(\d+)W))$)
+      DURATION_FORMAT = %r(^(-?)P(?:(?:(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d{3})?)S)?)?)|(?:(\d+)W))$)
 
       # Checks if the x509 cert provided is expired
       #

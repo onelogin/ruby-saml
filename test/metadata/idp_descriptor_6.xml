@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor entityID="https://hello.example.com/access/saml/idp.xml" validUntil="2020-01-04T18:02:33.910Z" cacheDuration="P2DT" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+<md:EntityDescriptor entityID="https://hello.example.com/access/saml/idp.xml" validUntil="2020-01-04T18:02:33.910Z" cacheDuration="P2DT0.000S" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
   <md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
     <md:KeyDescriptor use="signing">
       <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
