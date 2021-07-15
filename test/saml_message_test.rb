@@ -64,7 +64,7 @@ class RubySamlTest < Minitest::Test
 
         data = prefix + "A" * (200000 * 1024) + suffix
         bomb = Base64.encode64(Zlib::Deflate.deflate(data, 9)[2..-5])
-        assert_raises(OneLogin::RubySaml::ValidationError, "Encoded SAML Message exceeds " + OneLogin::RubySaml::SamlMessage::MAX_BYTE_SIZE.to_s + " bytes, so was rejected") do
+        assert_raises(OneLogin::RubySaml::ValidationError, "Encoded SAML Message exceeds " + OneLogin::RubySaml::Settings::DEFAULTS[:message_max_bytesize].to_s + " bytes, so was rejected") do
             saml_message = OneLogin::RubySaml::SamlMessage.new
             saml_message.send(:decode_raw_saml, bomb)
         end
